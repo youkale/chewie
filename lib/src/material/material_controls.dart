@@ -93,7 +93,7 @@ class _MaterialControlsState extends State<MaterialControls>
                       child:
                           _buildSubtitles(context, chewieController.subtitle!),
                     ),
-                  _buildBottomBar(context),
+                  // _buildBottomBar(context),
                 ],
               ),
             ],
