@@ -93,7 +93,7 @@ class _MaterialControlsState extends State<MaterialControls>
                       child:
                           _buildSubtitles(context, chewieController.subtitle!),
                     ),
-                  // _buildBottomBar(context),
+                  _buildBottomBar(context),
                 ],
               ),
             ],
@@ -288,17 +288,17 @@ class _MaterialControlsState extends State<MaterialControls>
               SizedBox(
                 height: chewieController.isFullScreen ? 15.0 : 0,
               ),
-              if (!chewieController.isLive)
-                Expanded(
-                  child: Container(
-                    padding: const EdgeInsets.only(right: 20),
-                    child: Row(
-                      children: [
-                        _buildProgressBar(),
-                      ],
-                    ),
-                  ),
-                ),
+              // if (!chewieController.isLive)
+              //   Expanded(
+              //     child: Container(
+              //       padding: const EdgeInsets.only(right: 20),
+              //       child: Row(
+              //         children: [
+              //           _buildProgressBar(),
+              //         ],
+              //       ),
+              //     ),
+              //   ),
             ],
           ),
         ),
