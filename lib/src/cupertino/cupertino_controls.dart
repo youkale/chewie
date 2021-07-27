@@ -270,7 +270,7 @@ class _CupertinoControlsState extends State<CupertinoControls>
                       ? CupertinoIcons.arrow_down_right_arrow_up_left
                       : CupertinoIcons.arrow_up_left_arrow_down_right,
                   color: iconColor,
-                  size: 16,
+                  size: chewieController.isFullScreen ? 16 : 12,
                 ),
               ),
             ),
@@ -340,7 +340,7 @@ class _CupertinoControlsState extends State<CupertinoControls>
                 child: Icon(
                   _latestValue.volume > 0 ? Icons.volume_up : Icons.volume_off,
                   color: iconColor,
-                  size: 16,
+                  size: chewieController.isFullScreen ? 16 : 12,
                 ),
               ),
             ),
