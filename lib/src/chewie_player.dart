@@ -234,7 +234,6 @@ class ChewieController extends ChangeNotifier {
     this.overlay,
     this.showControlsOnInitialize = true,
     this.showOptions = true,
-    this.showBottomBar = false,
     this.optionsBuilder,
     this.additionalOptions,
     this.showControls = true,
@@ -313,7 +312,6 @@ class ChewieController extends ChangeNotifier {
       showControlsOnInitialize:
           showControlsOnInitialize ?? this.showControlsOnInitialize,
       showOptions: showOptions ?? this.showOptions,
-      showBottomBar: showBottomBar?? this.showBottomBar,
       optionsBuilder: optionsBuilder ?? this.optionsBuilder,
       additionalOptions: additionalOptions ?? this.additionalOptions,
       showControls: showControls ?? this.showControls,
@@ -344,11 +342,6 @@ class ChewieController extends ChangeNotifier {
   /// If false, the options button in MaterialUI and MaterialDesktopUI
   /// won't be shown.
   final bool showOptions;
-
-
-
-  /// if false, this  option hidden bottomBar
-  final bool showBottomBar;
 
   /// Pass your translations for the options like:
   /// - PlaybackSpeed
